@@ -54,7 +54,7 @@
         <div class="w-col" style="width:14.028056112224%;">
         <div id="w-area-aaam" data-type="area" class="p-155234 n-widget w-area">
           <div id="w-text-aaan" data-type="text" class="n-widget w-text">
-            CONTACT US
+            <%= link_to 'CONTACT US', controller: 'articles' %>
           </div>
         </div>
         </div>
@@ -152,80 +152,31 @@
           </div>
       </div>
       <div id="w-columnbox-aabp" data-type="columnbox" class="n-widget w-columnbox">
-          <div class="w-col" style="width:74.591836734694%;">
-          <div id="w-area-aabq" data-type="area" class="p-155234 n-widget w-area">
-            <div id="w-columnbox-aabr" data-type="columnbox" class="n-widget w-columnbox">
-                <div class="w-col" style="width:50%;">
-                <div id="w-area-aabs" data-type="area" class="p-155234 n-widget w-area">
-                  <div id="w-text-aabt" data-type="text" class="n-widget w-text">
-                    &nbsp; &nbsp; &nbsp; &nbsp;contents1
-                  </div>
-                </div>
-                </div>
-                <div class="w-col" style="width:50%;">
-                <div id="w-area-aabu" data-type="area" class="p-155234 n-widget w-area">
-                  <div id="w-text-aabv" data-type="text" class="n-widget w-text">
-                    &nbsp; &nbsp; &nbsp; &nbsp;contents2
-                  </div>
-                </div>
-                </div>
-            </div>
-            <div id="w-columnbox-aabw" data-type="columnbox" class="n-widget w-columnbox">
-                <div class="w-col" style="width:50%;">
-                <div id="w-area-aabx" data-type="area" class="p-155234 n-widget w-area">
-                  <div id="w-text-aaby" data-type="text" class="n-widget w-text">
-                    &nbsp; &nbsp; &nbsp; &nbsp;contents3
-                  </div>
-                </div>
-                </div>
-                <div class="w-col" style="width:50%;">
-                <div id="w-area-aabz" data-type="area" class="p-155234 n-widget w-area">
-                  <div id="w-text-aaca" data-type="text" class="n-widget w-text">
-                    &nbsp; &nbsp; &nbsp; &nbsp;contents4
-                  </div>
-                </div>
-                </div>
-            </div>
-            <div id="w-columnbox-aacb" data-type="columnbox" class="n-widget w-columnbox">
-                <div class="w-col" style="width:50%;">
-                <div id="w-area-aacc" data-type="area" class="p-155234 n-widget w-area">
-                  <div id="w-text-aacd" data-type="text" class="n-widget w-text">
-                    &nbsp; &nbsp; &nbsp; &nbsp;contents5
-                  </div>
-                </div>
-                </div>
-                <div class="w-col" style="width:50%;">
-                <div id="w-area-aace" data-type="area" class="p-155234 n-widget w-area">
-                  <div id="w-text-aacf" data-type="text" class="n-widget w-text">
-                    &nbsp; &nbsp; &nbsp; &nbsp;contents6
-                  </div>
-                </div>
-                </div>
-            </div>
-          </div>
-          </div>
+
           <div class="w-col" style="width:25.408163265306%;">
           <div id="w-area-aacg" data-type="area" class="p-155234 n-widget w-area">
             <div id="w-titlebox-aach" data-type="titlebox" class="n-widget w-titlebox t-titlebox-a04 t-titlebox-a04-ff9900">
               <div id="w-titlebox-aach-title" class="w-titlebox-title t-titlebox-a04-title t-titlebox-a04-ff9900-title">
                 <i class="middle"></i>
-                <h2><i></i>Advanced Analysis</h2>
+                <h2><i></i>FeedBacks</h2>
               </div>
               <div id="w-area-aaci" data-type="area" class="p-155234 n-widget w-area w-titlebox-content t-titlebox-a04-content t-titlebox-a04-ff9900-content">
                 <div id="w-lister-aacj" data-type="lister" class="n-widget w-lister t-lister-05">
-                  <div class="w-lister-container">
-                  <ul>
-                    <li class="w-lister-li-1"><em>1</em><a class="title" href="" target="_blank">Uni-variate Analysis</a></li>
-                    <li class="w-lister-li-2"><em>2</em><a class="title" href="" target="_blank">Bi-variate Analysis</a></li>
-                    <li class="w-lister-li-3"><em>3</em><a class="title" href="" target="_blank">Anova Analysis</a></li>
-                    <li class="w-lister-li-4"><em>4</em><a class="title" href="" target="_blank">Linear Regression</a></li>
-                    <li class="w-lister-li-5"><em>5</em><a class="title" href="" target="_blank">Logistical Regression</a></li>
-                    <li class="w-lister-li-6"><em>6</em><a class="title" href="" target="_blank">Poisson regression</a></li>
-                    <li class="w-lister-li-7"><em>7</em><a class="title" href="" target="_blank">Survival Analysis</a></li>
-                    <li class="w-lister-li-8"><em>8</em><a class="title" href="" target="_blank">Probit Model</a></li>
-                    <li class="w-lister-li-9"><em>9</em><a class="title" href="" target="_blank">Two Step Model</a></li>
-                  </ul>
-                  </div>
+			<h1>Listing articles</h1>
+			<%= link_to 'New article', new_article_path %>
+			<table>
+      				<tr>
+        				<th>Title</th>
+        				<th>Text</th>
+      				</tr>
+
+        			<% @articles.each do |article| %>
+              			<tr>
+            				<td><%= article.title %></td>
+            				<td><%= article.text %></td>
+         		 	</tr>
+        			<% end %>
+			</table>
                 </div>
               </div>
             </div>
