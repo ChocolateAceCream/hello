@@ -163,20 +163,8 @@
               <div id="w-area-aaci" data-type="area" class="p-155234 n-widget w-area w-titlebox-content t-titlebox-a04-content t-titlebox-a04-ff9900-content">
                 <div id="w-lister-aacj" data-type="lister" class="n-widget w-lister t-lister-05">
 			<h1>Listing articles</h1>
-			<%= link_to 'New article', new_article_path %>
-			<table>
-      				<tr>
-        				<th>Title</th>
-        				<th>Text</th>
-      				</tr>
-
-        			<% @articles.each do |article| %>
-              			<tr>
-            				<td><%= article.title %></td>
-            				<td><%= article.text %></td>
-         		 	</tr>
-        			<% end %>
-			</table>
+			<%= link_to 'My Blog', controller: 'articles' %>
+			
                 </div>
               </div>
             </div>
