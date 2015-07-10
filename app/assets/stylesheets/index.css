@@ -424,10 +424,15 @@ body{margin:0 auto}a,a:visited{color:#0074ff;text-decoration:none}a:hover,a:acti
 }
 #w-area-aaac{
 	margin:0px auto 0px auto;
-	padding:5px 10px 10px 10px;
-	background-position:top;
 	margin-right:0px
 }
+
+#w-area-aaaac{
+	padding:15px 10px 10px 10px;
+	margin:0px auto 0px auto;
+	margin-right:0px
+}
+
 #w-text-aaad{
 	color:#cccccc;
 	text-align:center;
