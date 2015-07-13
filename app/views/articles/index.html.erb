@@ -7,7 +7,7 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="generator" content="9466 Design Engine 2.0.3" />
-        <title>Contact Us</title>
+        <title>Jobs</title>
     <%= stylesheet_link_tag "index.css" %>
     <script type="text/javascript" src="assets/index.js?1432165895"></script>
     <!--[if IE 6]>
@@ -34,22 +34,20 @@
                     <div id="w-lister-aacj" data-type="lister" class="n-widget w-lister t-lister-05">
   
                 <h1>Recent News</h1>
-                <title>Home</title>
-                <link rel="stylesheet" href="assets/index.css?1432165895" />
-            <%= link_to 'New Posts', new_article_path %>
+                <%= link_to 'New Posts', new_article_path %>
     
 
                     <% @articles.each do |article| %>
 
                         <%= div_for article, :class => "posts" do %>                                                                 
-                             <p><%= link_to article.title, display_article_path(article) %>  ---  <%= article.created_at.strftime("%b %d, %Y") %><p>
-
+                             <p><%= link_to article.title, display_article_path(article) %>  ---  <%= article.created_at.strftime("%b %d, %Y") %>
                              <button><%= link_to 'Edit', edit_article_path(article) %></button>
                              <button><%= link_to 'Destroy', article_path(article),
                                               method: :delete,
                                               data: { confirm: 'Are you sure?' } %>
-                             </button>             
-               
+                             </button>
+                             <p>
+                        
                         <% end %>
                     <% end %>
       

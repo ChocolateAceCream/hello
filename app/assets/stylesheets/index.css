@@ -842,3 +842,13 @@ body{margin:0 auto}a,a:visited{color:#0074ff;text-decoration:none}a:hover,a:acti
 	background-position:top;
 	margin-left:5px
 }
+
+
+.posts{
+    background:transparent url("/assets/info-bar.png") no-repeat right -42px;
+    height:33px;
+    padding:0 16px 0 0;
+    margin:0;
+    line-height:31px;
+    color:#fff;
+}

@@ -14,7 +14,7 @@
         <div class="w-col" style="width:135px;">
         <div id="w-area-aaae" data-type="area" class="p-155234 n-widget w-area">
           <div id="w-text-aaaf" data-type="text" class="n-widget w-text">
-            <a href="./index.html" title="%5Bobject%20Object%5D">HOME</a>
+             <%= link_to 'HOME', root_url %>
           </div>
         </div>
         </div>
@@ -35,14 +35,14 @@
         <div class="w-col" style="width:135px;">
         <div id="w-area-aaak" data-type="area" class="p-155234 n-widget w-area">
           <div id="w-text-aaal" data-type="text" class="n-widget w-text">
-            JOBS
+            <%= link_to 'JOBS', controller: 'articles' %>
           </div>
         </div>
         </div>
         <div class="w-col" style="width:130px;">
         <div id="w-area-aaam" data-type="area" class="p-155234 n-widget w-area">
           <div id="w-text-aaan" data-type="text" class="n-widget w-text">
-            <%= link_to 'CONTACT US', controller: 'articles' %>
+            CONTACT US
           </div>
         </div>
         </div>
