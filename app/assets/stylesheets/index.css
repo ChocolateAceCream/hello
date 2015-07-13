@@ -395,7 +395,7 @@ body{margin:0 auto}a,a:visited{color:#0074ff;text-decoration:none}a:hover,a:acti
 .t-titlebox-a04-ff9900-title{border-bottom:solid 2px #ff9900}.t-titlebox-a04-ff9900-title h2 i{background-image:url("ff9900.png")}.t-titlebox-a04-ff9900-title a:hover{color:#ff9900}
 .w-lister-container{zoom:1;display:inline-block;*display:inline;-moz-box-sizing:border-box;box-sizing:border-box;width:100%;padding:0;margin:0}.w-lister-container ul{margin:0;padding:0;list-style:none;overflow:hidden}
 .t-lister-05{
-	line-height:2.5
+	line-height:2.5;
 	overflow:auto;
 	height: auto;
 }
