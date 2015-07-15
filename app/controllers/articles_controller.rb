@@ -24,7 +24,7 @@ class ArticlesController < ApplicationController
 
     def create
           @article = Article.new(article_params)
-
+          ModelMailer.new_record_notification.deliver
           if  @article.save
               redirect_to @article
           else
