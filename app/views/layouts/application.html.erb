@@ -1,14 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>HellpApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="generator" content="9466 Design Engine 2.0.3" />
+    <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag "index.css" %>
+   
+    <!--[if IE 6]>
+    <script> try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} </script>
+    <![endif]-->
+  </head>
+  <body id="w-body-aaaa" data-type="body" class="p-155234 n-widget w-body">
+    
 
-<%= yield %>
 
-</body>
+
+<div id="w-columnbox-aaab" data-type="columnbox" class="n-widget w-columnbox">
+        <div class="w-col" style="width:56px;height:56px;">
+        <div id="w-area-aaaac" data-type="area" class="p-155234 n-widget w-area">
+             <%= image_tag "JBLogo.png" %>
+        </div>
+        </div>
+        <div class="w-col" style="width:270px;">
+        <div id="w-area-aaac" data-type="area" class="p-155234 n-widget w-area">
+          <div id="w-text-aaad" data-type="text" class="n-widget w-text">
+             JB Analytical Inc.
+          </div>
+        </div>
+        </div>
+        <div class="w-col" style="width:135px;">
+        <div id="w-area-aaae" data-type="area" class="p-155234 n-widget w-area">
+          <div id="w-text-aaaf" data-type="text" class="n-widget w-text">
+             <%= link_to 'HOME',root_path%>
+          </div>
+        </div>
+        </div>
+        <div class="w-col" style="width:135px;">
+        <div id="w-area-aaag" data-type="area" class="p-155234 n-widget w-area">
+          <div id="w-text-aaah" data-type="text" class="n-widget w-text">
+            ABOUT US
+          </div>
+        </div>
+        </div>
+        <div class="w-col" style="width:135px;">
+        <div id="w-area-aaai" data-type="area" class="p-155234 n-widget w-area">
+          <div id="w-text-aaaj" data-type="text" class="n-widget w-text">
+            <a href="jiaoxue.html" title="%5Bobject%20Object%5D">OUR CLIENTS</a>
+          </div>
+        </div>
+        </div>
+        <div class="w-col" style="width:135px;">
+        <div id="w-area-aaak" data-type="area" class="p-155234 n-widget w-area">
+          <div id="w-text-aaal" data-type="text" class="n-widget w-text">
+            <%= link_to 'JOBS', articles_path %>
+          </div>
+        </div>
+        </div>
+        <div class="w-col" style="width:130px;">
+        <div id="w-area-aaam" data-type="area" class="p-155234 n-widget w-area">
+          <div id="w-text-aaan" data-type="text" class="n-widget w-text">
+            CONTACT US
+          </div>
+        </div>
+        </div>
+    </div>
+
+
+<div id="w-slider-aaao" data-type="slider" class="n-widget w-slider t-slider-04">
+      <div class="slidesjs">
+        <div class="slidesjs-slide"><a class="thumblink">
+        <%= image_tag("family.jpg", :alt=>"We are a team of experts in data manipulation, statistical analysis and modeling using SAS") %></a></div>
+         <div class="slidesjs-slide"><a class="thumblink"><img src="http://cdn.business2community.com/wp-content/uploads/2013/04/ID-100789555.jpg" alt="We are looking for SAS Programmers and Data Analysts " /></a></div>
+        <div class="slidesjs-slide"><a class="thumblink"><img src="http://www.transatlanticbusiness.org/wp-content/uploads/2014/05/Working-Group.jpg" alt="We have worked for banks, medical centers and government institues" /></a></div>
+      </div>
+</div>  
+
+
+    <%= yield %>
+  
+
+
+    <div id="w-area-aack" data-type="area" class="p-155234 n-widget w-area">
+      <div id="w-columnbox-aacl" data-type="columnbox" class="n-widget w-columnbox">
+          <div class="w-col" style="width:50%;">
+          <div id="w-area-aacm" data-type="area" class="p-155234 n-widget w-area">
+            <div id="w-text-aacn" data-type="text" class="n-widget w-text">
+              ABOUT US
+            </div>
+            <div id="w-text-aaco" data-type="text" class="n-widget w-text">
+              About us<div>Job opportunies</div>
+            </div>
+          </div>
+          </div>
+          <div class="w-col" style="width:50%;">
+          <div id="w-area-aacp" data-type="area" class="p-155234 n-widget w-area">
+            <div id="w-text-aacq" data-type="text" class="n-widget w-text">
+              CONTACT US
+            </div>
+            <div id="w-text-aacr" data-type="text" class="n-widget w-text">
+              Phone: (516) 368-4586<div>Email: JBAnalytical@gmail.com</div><div>Location: Syosset, New York</div
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+
+
+  
+    <!--custom footer start-->
+<script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fce299e0fd4094e4d5efce40bab839811' type='text/javascript'%3E%3C/script%3E"));</script>
+<!--custom footer end-->
+  </body>
 </html>
